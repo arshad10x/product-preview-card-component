@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$font1: "Fraunces", serif;
+$font-2: "Montserrat", sans-serif;
+$green: hsl(158, 100%, 10%);
+$light-green: hsl(158, 36%, 37%);
+$white: #fff;
+$color-cream: hsl(30, 38%, 92%);
+$heading-color: hsl(212, 21%, 14%);
+$content-color: hsl(228, 12%, 48%);
+$content-fontSize: 16px;
+$title-fontSize: 12px;
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 350px 500px;
+  padding: 40px 20px;
+  height: 100vh;
+
+  .section-left .image {
+    img {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      position: relative;
+      width: 350px;
+      height: 500px;
+    }
+  }
+
+  .section-right {
+    padding: 20px 25px;
+    color: $color-cream;
+
+    .heading {
+      line-height: 3rem;
+      letter-spacing: 0.3rem;
+      font-size: $title-fontSize;
+      color: $content-color;
+      text-transform: uppercase;
+      font-family: $font-2;
+      font-weight: 300;
+    }
+
+    h1 {
+      width: 13rem;
+      font-family: $font1;
+      font-weight: 700;
+      color: $heading-color;
+    }
+
+    .content p {
+      padding: 25px 0px;
+      color: $content-color;
+      font-size: $content-fontSize;
+      font-family: $font-2;
+      line-height: 1.5;
+      width: 17rem;
+    }
+
+    .price {
+      display: inline;
+      margin-right: 15px;
+      font-family: $font1;
+      color: $light-green;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    .orgPrice {
+      display: inline;
+      padding-bottom: 15px;
+      position: relative;
+      color: $content-color;
+      bottom: 10px;
+      text-align: center;
+      text-decoration: line-through;
+    }
+
+    .btn {
+      display: block;
+      margin-top: 1rem;
+      padding: 0.9rem 3rem;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 40px;
+      background: $light-green;
+      color: $white;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-family: $font-2;
+
+      &:hover {
+        background-color: $green;
+      }
+
+      .cart {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) and (min-width: 375px) {
+}

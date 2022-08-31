@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 350px 500px;
+  padding: 40px 20px;
+  height: 100vh;
+}
+.container .section-left .image img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  width: 350px;
+  height: 500px;
+}
+.container .section-right {
+  padding: 20px 25px;
+  color: hsl(30deg, 38%, 92%);
+}
+.container .section-right .heading {
+  line-height: 3rem;
+  letter-spacing: 0.3rem;
+  font-size: 12px;
+  color: hsl(228deg, 12%, 48%);
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.container .section-right h1 {
+  width: 13rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(212deg, 21%, 14%);
+}
+.container .section-right .content p {
+  padding: 25px 0px;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  width: 17rem;
+}
+.container .section-right .price {
+  display: inline;
+  margin-right: 15px;
+  font-family: "Fraunces", serif;
+  color: hsl(158deg, 36%, 37%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.container .section-right .orgPrice {
+  display: inline;
+  padding-bottom: 15px;
+  position: relative;
+  color: hsl(228deg, 12%, 48%);
+  bottom: 10px;
+  text-align: center;
+  text-decoration: line-through;
+}
+.container .section-right .btn {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.9rem 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 40px;
+  background: hsl(158deg, 36%, 37%);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.container .section-right .btn:hover {
+  background-color: hsl(158deg, 100%, 10%);
+}
+.container .section-right .btn .cart {
+  padding: 0 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
